@@ -27,6 +27,7 @@ module.exports = () => {
 			new InjectManifest({
 				swSrc: './src-sw.js',
 				swDest: 'src-sw.js',
+				exclude: [/\.map$/, /asset-manifest\.json$/],
 			}),
 
 			//Create manifest.json file
@@ -35,7 +36,7 @@ module.exports = () => {
 				inject: true,
 				name: 'Just Another Text Editor',
 				short_name: 'J.A.T.E ',
-				description: 'Text editor for coding',
+				description: 'Coding themed text editor',
 				start_url: './',
 				publicPath: './',
 				icons: [

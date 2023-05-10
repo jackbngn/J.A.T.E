@@ -36,5 +36,5 @@
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "./",
-  "description": "Text editor for coding"
+  "description": "Coding themed text editor"
 }
